@@ -1,11 +1,16 @@
+<<<<<<< HEAD
 Here’s the `README.md` for your **TaskFlow** project:
 
 ````markdown
+=======
+
+>>>>>>> cb6b772c531583d4f197b340ef0ae839063ae0f2
 # TaskFlow - Task Management Server
 
 ## Introduction
 
 TaskFlow is a modern and efficient task management web application built with **React**, **Firebase**, and **Tailwind CSS**. The backend server, powered by **Node.js**, **Express**, and **MongoDB**, provides secure APIs for user authentication, task management, and real-time task updates.
+
 
 ## Table of Contents
 
@@ -57,8 +62,8 @@ Ensure you have the following installed:
 
 1. **Clone the repository**
    ```sh
-   git clone https://github.com/yourusername/taskflow-server.git
-   cd taskflow-server
+   git clone https://github.com/Rohithossain12/job-task-server
+   cd job-task-server
    ```
 ````
 
