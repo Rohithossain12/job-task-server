@@ -1,10 +1,4 @@
-<<<<<<< HEAD
-Here’s the `README.md` for your **TaskFlow** project:
 
-````markdown
-=======
-
->>>>>>> cb6b772c531583d4f197b340ef0ae839063ae0f2
 # TaskFlow - Task Management Server
 
 ## Introduction
