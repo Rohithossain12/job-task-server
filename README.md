@@ -49,8 +49,8 @@ Ensure you have the following installed:
 ### Steps to Install and Run Locally
 1. **Clone the repository**
    ```sh
-   git clone https://github.com/yourusername/taskflow-server.git
-   cd taskflow-server
+   git clone https://github.com/Rohithossain12/job-task-server
+   cd job-task-server
    ```
 
 2. **Install dependencies**
