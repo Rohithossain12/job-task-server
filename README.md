@@ -1,16 +1,9 @@
-<<<<<<< HEAD
-Here’s the `README.md` for your **TaskFlow** project:
 
-````markdown
-=======
-
->>>>>>> cb6b772c531583d4f197b340ef0ae839063ae0f2
 # TaskFlow - Task Management Server
 
 ## Introduction
 
 TaskFlow is a modern and efficient task management web application built with **React**, **Firebase**, and **Tailwind CSS**. The backend server, powered by **Node.js**, **Express**, and **MongoDB**, provides secure APIs for user authentication, task management, and real-time task updates.
-
 
 ## Table of Contents
 
@@ -26,8 +19,8 @@ TaskFlow is a modern and efficient task management web application built with **
 
 ## Live Links
 
-- **Frontend**: [TaskFlow Live](#) _(Add your live frontend link)_
-- **Backend**: [TaskFlow API](#) _(Add your backend hosting link if applicable)_
+- **Frontend**: [TaskFlow Live](https://reliable-alpaca-b0beba.netlify.app/)
+- **Backend**: [TaskFlow API](https://job-task-server-nine-black.vercel.app/)
 
 ## Features
 
@@ -65,10 +58,8 @@ Ensure you have the following installed:
    git clone https://github.com/Rohithossain12/job-task-server
    cd job-task-server
    ```
-````
 
 2. **Install dependencies**
-
    ```sh
    npm install
    ```
@@ -141,7 +132,4 @@ This project is licensed under the **ISC License**.
 **Contributors**
 
 - [Rohit Hossain](https://github.com/Rohithossain12)
-
-```
-
 ```
