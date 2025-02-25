@@ -11,7 +11,7 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173",
-      "https://reliable-alpaca-b0beba.netlify.app",
+      // "https://reliable-alpaca-b0beba.netlify.app",
     ],
     methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
     allowedHeaders: ["Content-Type", "Authorization"],
@@ -47,6 +47,13 @@ async function run() {
       res.status(201).send(result);
     });
 
+    // Save Task
+    app.post("/tasks", async (req, res) => {
+      const task = { ...req.body, order: Date.now() };
+      const result = await taskCollection.insertOne(task);
+      res.status(201).send(result);
+    });
+
     //  Save Task in DB
     app.post("/tasks", async (req, res) => {
       const task = req.body;
@@ -54,10 +61,13 @@ async function run() {
       res.status(201).send(result);
     });
 
-    //  Get Tasks by Email
+    // Get Tasks
     app.get("/tasks", async (req, res) => {
       const { email } = req.query;
-      const tasks = await taskCollection.find({ email: email }).toArray();
+      const tasks = await taskCollection
+        .find({ email })
+        .sort({ order: 1 })
+        .toArray();
       res.json(tasks);
     });
 
@@ -116,6 +126,21 @@ async function run() {
           .status(500)
           .json({ success: false, message: "Server error", error });
       }
+    });
+
+    // Update Task Order
+    app.patch("/reorder", async (req, res) => {
+      const { tasks } = req.body;
+
+      const bulkOps = tasks.map(({ id, order }) => ({
+        updateOne: {
+          filter: { _id: new ObjectId(id) },
+          update: { $set: { order } },
+        },
+      }));
+
+      const result = await taskCollection.bulkWrite(bulkOps);
+      res.send(result);
     });
 
     // Connect to MongoDB
