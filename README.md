@@ -19,7 +19,7 @@ TaskFlow is a modern and efficient task management web application built with **
 
 ## Live Links
 
-- **Frontend**: [TaskFlow Live](https://reliable-alpaca-b0beba.netlify.app/)
+- **Frontend**: [TaskFlow Live](https://job-task-client-xi.vercel.app/)
 - **Backend**: [TaskFlow API](https://job-task-server-nine-black.vercel.app/)
 
 ## Features
